@@ -14,5 +14,24 @@ This model doesn’t assume explicit density function as in the case of VAEs.</p
 <p>Try to distinguish between real and fake images.</p>
 <p>It is a second multilayer perceptron D(x;theta<sub> d</sub>) that outputs a single scalar. D(x) represents the probability that x came from the data rather than p<sub>g.</sub></p>
 
+![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/GANs.PNG)
 
- 
+<h4>Mathematics behind above intuition</h4>
+
+![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/GANs%202.PNG)
+1. <p> Discriminator(theta<sub>d</sub> ) try to maximize objective function such that D(x) is close to 1(real) and D(G(z)) is close to 0(fake).</p>
+<p>D is trained so that we get the maximum value of log(D<sub>theta d</sub>(x)) that is internally trying to label dataset images as real, also D is maximizing log(1-D<sub>theta d</sub>(G<sub>theta g</sub>(z)) this internally trying to label generated images as fake images. </p>
+2. <p>Generator (theta<sub>g</sub> ) try to minimize objective such that D(G(Z)) is close to 1.</p>
+<P>It is trying to minimize log(1-D<sub>theta d</sub>(G<sub> theta g </sub>(z)) thus setting g (through gradient descents) such that it can fool discriminator.
+Rather than training G to minimize log(1 - D(G(z))) we can train G to maximize log(D(G(z)) because it provides steep gradients initially then it provides non steep.</p>
+<h4>Implementation</h4>
+
+![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/GANs%203.PNG)
+<p>Note: Objective function obtain minimum for a given generator when p<sub>g</sub> = p<sub>data</sub></p>
+
+<h4>Disadvantages</h4>
+1.<p>There is no explicit representation of p<sub>g</sub> (x).</p>
+2.<p>D must be well sync with G otherwise it could create problem.</p>
+<p><b>this pape summary of paper ends.</b></p>
+<p>The notebook you see here is implemented in form of convolutional architecture popularly known as <b>DCGANs</b>.
+
