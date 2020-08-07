@@ -32,6 +32,6 @@ Rather than training G to minimize log(1 - D(G(z))) we can train G to maximize l
 <h4>Disadvantages</h4>
 1.<p>There is no explicit representation of p<sub>g</sub> (x).</p>
 2.<p>D must be well sync with G otherwise it could create problem.</p>
-<p><b>this pape summary of paper ends.</b></p>
+<p><b>Here paper summary of paper ends.</b></p>
 <p>The notebook you see here is implemented in form of convolutional architecture popularly known as <b>DCGANs</b>.
 
