@@ -62,7 +62,7 @@ Rather than training G to minimize log(1 - D(G(z))) we can train G to maximize l
   
    Training goes a follows:<br>
   
-   ![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/dcgan%20gif%20mnist.gif)<br>
+   ![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/celeba_DCGANs.gif)<br>
    
    celeba result after 50th epoch<br>
    
