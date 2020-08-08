@@ -69,7 +69,7 @@ Rather than training G to minimize log(1 - D(G(z))) we can train G to maximize l
    ![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/celeba_results.png)<br>
    
    
-   <b> There are mpore advances done in fro getting better results on human faces for that you can have a look at style GANs https://arxiv.org/pdf/1812.04948.pdf</b>
+   <b> There are more advances done for getting better results on human faces for that you can have a look at style GANs https://arxiv.org/pdf/1812.04948.pdf</b>
    
    
 
