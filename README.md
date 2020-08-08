@@ -34,4 +34,52 @@ Rather than training G to minimize log(1 - D(G(z))) we can train G to maximize l
 2.<p>D must be well sync with G otherwise it could create problem.</p>
 <p><b>Here paper summary of paper ends.</b></p>
 <p>The notebook you see here is implemented in form of convolutional architecture popularly known as <b>DCGANs</b>.
+<p> Here is basoc architecture of DCGANs.
+  
+  ![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/DCGANS%20archi.PNG)
+  
+  <p>Here I implemented DCGANs on MNIST dataset and celeba(50000images due to lack of computational power)</p>
+  
+  <h3> Results of applying DCGANs on MNIST</h3>
+  Generator loss and discriminator loss are as follows:<br>
+  
+  ![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/MNIST%20Loss%20plot.PNG)<br>
+  
+  Training goes a follows:<br>
+  
+  ![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/dcgan%20gif%20mnist.gif)<br>
+  
+  MNIST result after 50th epoch<br>
+  ![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/MNIST_result.png)
+  
+  <h3>Results of applying MNIST on celeba<h3>
+  
+  <b>Note: Here the model is not getting good results as it as facing mode collapse, so I am still improving this.</b><br>
+  
+  Discriminator and generator loss function are as follows: 
+  
+  ![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/celeba_loss.png)<br>
+  
+   Training goes a follows:<br>
+  
+   ![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/dcgan%20gif%20mnist.gif)<br>
+   
+   celeba result after 50th epoch<br>
+   
+   ![alt text](https://github.com/dhruvgrover1251/Playing_with_GANs/blob/master/celeba_results.png)<br>
+   
+   
+   <b> There are mpore advances done in fro getting better results on human faces for that you can have a look at style GANs https://arxiv.org/pdf/1812.04948.pdf</b>
+   
+   
+
+   
+   
+   
+   
+
+
+
+  
+  
 
